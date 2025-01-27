@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 14, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, and professional experience in software engineering.
 
-First, run the development server:
+## 🚀 Tech Stack
 
+- **Framework:** Next.js 14 (React)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Font:** Geist (Variable Font)
+- **Deployment:** Vercel
+
+## ✨ Features
+
+- Responsive design that works on all devices
+- Dark/Light mode theme support
+- Modern and clean UI with Tailwind CSS
+- Type-safe development with TypeScript
+- Fast page loads with Next.js optimizations
+- Custom components and UI elements
+- Project showcase with detailed case studies
+- Optimized images and assets
+
+## 🛠️ Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/Labrahmi/Labrahmi.github.io
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+cd portfolio
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a `.env` file in the root directory (if needed):
+```env
+# Add any environment variables here
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Run the development server:
+```bash
+npm run dev
+```
 
-## Learn More
+Open [http://localhost:3000](http://localhost:3000) to view the portfolio in your browser.
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+.
+├── app/                  # Next.js 14 app directory
+│   ├── components/      # Reusable UI components
+│   ├── providers/      # Theme and other providers
+│   └── fonts/         # Custom font files
+├── components/         # Shared components
+├── lib/               # Utilities, types, and data
+└── public/            # Static assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Configuration
 
-## Deploy on Vercel
+- `tailwind.config.ts` - Tailwind CSS configuration
+- `next.config.js` - Next.js configuration
+- `tsconfig.json` - TypeScript configuration
+- `components.json` - UI components configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This portfolio is optimized for deployment on Vercel. To deploy your own instance:
+
+1. Push your code to a GitHub repository
+2. Import the project to Vercel
+3. Configure your deployment settings
+4. Deploy!
+
+## 📝 Development
+
+To add new projects or modify content:
+
+1. Update the project data in `lib/data.ts`
+2. Add project images to `public/projects/`
+3. Modify components in `app/components/` as needed
+
+## 🎨 Customization
+
+- Update colors and theme in `tailwind.config.ts`
+- Modify global styles in `app/globals.css`
+- Adjust layout components in `app/components/`
+- Update content in `lib/data.ts`
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Labrahmi/Labrahmi.github.io/issues).
+
+## 📧 Contact
+
+If you have any questions or feedback, feel free to reach out:
+
+- GitHub: [@Labrahmi](https://github.com/Labrahmi)
+- Website: [labrahmi.github.io](https://labrahmi.github.io)
