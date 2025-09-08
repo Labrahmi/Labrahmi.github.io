@@ -32,8 +32,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`${montserrat.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
+          enableSystem={false}
           disableTransitionOnChange
         >
           {children}

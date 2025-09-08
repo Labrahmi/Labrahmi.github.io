@@ -55,17 +55,17 @@ export default function CurrentlyLearning() {
                   <div className="absolute -left-[3.25rem] top-1/2 w-8 h-[1px] bg-blue-500/20 group-hover:bg-blue-500/40 transition-colors" />
 
                   {/* Icon circle */}
-                  <div className="absolute -left-[4.25rem] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-900 flex items-center justify-center group-hover:border-blue-500/50 transition-colors">
+                  <div className="absolute -left-[4.25rem] top-1/2 -translate-y-1/2 w-8 h-8 rounded-full border border-zinc-700 bg-zinc-900 flex items-center justify-center group-hover:border-blue-500/50 transition-colors">
                     <item.icon className="w-4 h-4 text-blue-500" />
                   </div>
 
                   <div className="p-0 md:p-4 xl:p-6">
                     <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
                       <div className="flex-1">
-                        <h3 className="text-lg font-medium text-zinc-800 dark:text-zinc-200 mb-2">
+                        <h3 className="text-lg font-medium text-zinc-200 mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed line-clamp-3 md:line-clamp-none">
+                        <p className="text-sm text-zinc-400 leading-relaxed line-clamp-3 md:line-clamp-none">
                           {item.description}
                         </p>
                       </div>
@@ -73,14 +73,14 @@ export default function CurrentlyLearning() {
                       <div className="sm:w-48">
                         <div className="space-y-2">
                           <div className="flex justify-between text-sm">
-                            <span className="text-zinc-600 dark:text-zinc-400">
+                            <span className="text-zinc-400">
                               Progress
                             </span>
-                            <span className="text-zinc-800 dark:text-zinc-200 tabular-nums font-medium">
+                            <span className="text-zinc-200 tabular-nums font-medium">
                               {item.progress}%
                             </span>
                           </div>
-                          <div className="h-1.5 bg-zinc-100 dark:bg-zinc-800 rounded-full overflow-hidden">
+                          <div className="h-1.5 bg-zinc-800 rounded-full overflow-hidden">
                             <motion.div
                               initial={{ width: 0 }}
                               animate={{ width: `${item.progress}%` }}
@@ -88,7 +88,7 @@ export default function CurrentlyLearning() {
                               className="h-full bg-gradient-to-r from-blue-500 to-blue-400 rounded-full"
                             />
                           </div>
-                          <div className="flex items-center gap-1.5 text-xs text-zinc-500 dark:text-zinc-400">
+                          <div className="flex items-center gap-1.5 text-xs text-zinc-400">
                             <svg
                               className="w-3.5 h-3.5"
                               fill="none"

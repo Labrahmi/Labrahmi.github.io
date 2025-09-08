@@ -28,7 +28,7 @@ const Menu = () => {
         className="md:hidden p-2"
         aria-label="Toggle Menu"
       >
-        <MenuIcon className="w-6 h-6 text-zinc-800 dark:text-zinc-200" />
+        <MenuIcon className="w-6 h-6 text-zinc-200" />
       </button>
 
       {/* Desktop Menu */}
@@ -37,7 +37,7 @@ const Menu = () => {
           <Link
             key={link.name}
             href={link.href}
-            className="text-zinc-800 dark:text-zinc-200 hover:text-black dark:hover:text-white transition-colors"
+            className="text-zinc-200 hover:text-white transition-colors"
           >
             {link.name}
           </Link>
@@ -50,7 +50,7 @@ const Menu = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 bg-black dark:bg-zinc-900 z-50 md:hidden flex flex-col h-screen"
+          className="fixed inset-0 bg-zinc-900 z-50 md:hidden flex flex-col h-screen"
         >
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-4 border-b border-zinc-800">
@@ -115,11 +115,11 @@ const Navbar = () => {
       >
         <Link
           href="#top"
-          className="text-lg font-medium text-zinc-800 dark:text-zinc-200 relative group"
+          className="text-lg font-medium text-zinc-200 relative group"
         >
           <span className="relative">
             {personalInfo.name} 👨‍💻
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-black dark:bg-white group-hover:w-full transition-all duration-300" />
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300" />
           </span>
         </Link>
 

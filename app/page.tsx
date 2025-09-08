@@ -12,7 +12,7 @@ import LoadingSpinner from "@/app/components/ui/LoadingSpinner";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-50 dark:bg-zinc-950 transition-colors duration-300 relative overflow-hidden">
+    <main className="min-h-screen bg-zinc-950 transition-colors duration-300 relative overflow-hidden">
       <div className="fixed inset-0 pointer-events-none opacity-50">
         <div className="absolute inset-0 bg-grid-futuristic" />
         <div className="absolute inset-0 bg-matrix-effect" />

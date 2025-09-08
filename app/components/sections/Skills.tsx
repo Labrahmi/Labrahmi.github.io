@@ -47,21 +47,21 @@ const Skills = () => {
             <Card key={Skill.name} gradient>
               <motion.div variants={skillVariants}>
                 <div className="flex items-center gap-4 mb-4">
-                  <div className="p-3 rounded-lg bg-zinc-100 dark:bg-zinc-800/50 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-700/50 transition-colors">
+                  <div className="p-3 rounded-lg bg-zinc-800/50 group-hover:bg-zinc-700/50 transition-colors">
                     <Skill.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+                  <h3 className="text-2xl font-semibold text-zinc-100">
                     {Skill.name}
                   </h3>
                 </div>
-                <p className="text-zinc-600 dark:text-zinc-400 mb-6">{Skill.description}</p>
+                <p className="text-zinc-400 mb-6">{Skill.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {Skill.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-4 py-1.5 text-sm rounded-full bg-zinc-100 dark:bg-zinc-800/30 
-                               text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700/50 
-                               hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors cursor-default"
+                      className="px-4 py-1.5 text-sm rounded-full bg-zinc-800/30
+                               text-zinc-300 hover:bg-zinc-700/50
+                               hover:text-zinc-100 transition-colors cursor-default"
                     >
                       {tech}
                     </span>

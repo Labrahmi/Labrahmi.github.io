@@ -13,7 +13,7 @@ export const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-bold text-zinc-900 dark:text-zinc-100"
+        className="text-4xl font-bold text-zinc-100"
       >
         {title}
       </motion.h2>
@@ -22,7 +22,7 @@ export const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto text-lg"
+        className="text-zinc-400 max-w-2xl mx-auto text-lg"
       >
         {subtitle}
       </motion.p>

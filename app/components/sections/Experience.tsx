@@ -46,7 +46,7 @@ const Experience = () => {
             className="relative space-y-12"
           >
             {/* Timeline line */}
-            <div className="absolute left-8 top-4 bottom-4 w-px bg-gradient-to-b from-zinc-300 via-zinc-200 to-zinc-300 dark:from-zinc-800 dark:via-zinc-700 dark:to-zinc-800 hidden lg:block" />
+            <div className="absolute left-8 top-4 bottom-4 w-px bg-gradient-to-b from-zinc-800 via-zinc-700 to-zinc-800 hidden lg:block" />
 
             {experiences.map((experience, index) => (
               <motion.div
@@ -58,19 +58,19 @@ const Experience = () => {
                   gradient
                   className={`p-0.5 rounded-xl bg-gradient-to-r ${experience.color}`}
                 >
-                  <div className="relative p-8 rounded-xl bg-white dark:bg-zinc-900/90 backdrop-blur-xl">
+                  <div className="relative p-8 rounded-xl bg-zinc-900/90 backdrop-blur-xl">
                     <div className="flex flex-col lg:flex-row gap-8">
                       {/* Timeline dot */}
-                      <div className="hidden lg:block absolute -left-8 top-10 w-4 h-4 rounded-full border-2 border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800" />
+                      <div className="hidden lg:block absolute -left-8 top-10 w-4 h-4 rounded-full border-2 border-zinc-700 bg-zinc-800" />
 
                       <div className="flex-1 space-y-6">
                         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                           <div className="space-y-2">
                             <div className="flex items-center gap-3">
-                              <div className="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800/50">
-                                <Briefcase className="w-5 h-5 text-zinc-600 dark:text-zinc-400" />
+                              <div className="p-2 rounded-lg bg-zinc-800/50">
+                                <Briefcase className="w-5 h-5 text-zinc-400" />
                               </div>
-                              <h3 className="text-2xl font-bold text-zinc-900 dark:text-zinc-100">
+                              <h3 className="text-2xl font-bold text-zinc-100">
                                 {experience.title}
                               </h3>
                             </div>
@@ -78,7 +78,7 @@ const Experience = () => {
                               href={experience.link}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 transition-colors inline-flex items-center gap-1.5 group"
+                              className="text-zinc-400 hover:text-zinc-200 transition-colors inline-flex items-center gap-1.5 group"
                               whileHover={{ x: 2 }}
                             >
                               {experience.company}
@@ -86,7 +86,7 @@ const Experience = () => {
                             </motion.a>
                           </div>
 
-                          <div className="flex flex-wrap gap-4 text-sm text-zinc-600 dark:text-zinc-400">
+                          <div className="flex flex-wrap gap-4 text-sm text-zinc-400">
                             <span className="flex items-center gap-1.5">
                               <Calendar className="w-4 h-4" />
                               {experience.period}
@@ -108,9 +108,9 @@ const Experience = () => {
                                   whileInView={{ opacity: 1, x: 0 }}
                                   viewport={{ once: true }}
                                   transition={{ delay: 0.2 + i * 0.1 }}
-                                  className="flex items-start gap-3 text-zinc-700 dark:text-zinc-300"
+                                  className="flex items-start gap-3 text-zinc-300"
                                 >
-                                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-400 dark:bg-zinc-500 mt-2.5" />
+                                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-500 mt-2.5" />
                                   <span className="flex-1 line-clamp-1 xl:line-clamp-none">
                                     {item}
                                   </span>
@@ -123,11 +123,11 @@ const Experience = () => {
                             {experience.skills.map((skill) => (
                               <span
                                 key={skill}
-                                className="px-3 py-1 text-sm rounded-full 
-                                         bg-zinc-100 dark:bg-zinc-800/30 
-                                         text-zinc-700 dark:text-zinc-300 
-                                         hover:bg-zinc-200 dark:hover:bg-zinc-700/50 
-                                         hover:text-zinc-900 dark:hover:text-zinc-100 
+                                className="px-3 py-1 text-sm rounded-full
+                                         bg-zinc-800/30
+                                         text-zinc-300
+                                         hover:bg-zinc-700/50
+                                         hover:text-zinc-100
                                          transition-colors cursor-default"
                               >
                                 {skill}

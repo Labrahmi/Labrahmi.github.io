@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: "media",
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,7 +24,6 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       backgroundImage: {
-        'gradient-radial-light': 'radial-gradient(circle at center, rgba(244, 244, 245, 0.8) 0%, transparent 70%)',
         'gradient-radial-dark': 'radial-gradient(circle at center, rgba(39, 39, 42, 0.8) 0%, transparent 70%)',
       },
     },

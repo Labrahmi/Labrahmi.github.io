@@ -61,19 +61,19 @@ const Contact = () => {
                     href={`mailto:${personalInfo.email}`}
                     className="relative flex items-center gap-6 p-6"
                   >
-                    <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-800 transition-colors">
-                      <Mail className="w-7 h-7 text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-300" />
+                    <div className="p-3.5 rounded-xl bg-zinc-800/80 group-hover:bg-zinc-800 transition-colors">
+                      <Mail className="w-7 h-7 text-zinc-400 group-hover:text-zinc-300" />
                     </div>
                     <div className="flex-1 flex items-center justify-between">
                       <div>
-                        <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white">
+                        <h3 className="text-xl font-semibold text-zinc-200 group-hover:text-white">
                           Email Me
                         </h3>
-                        <p className="text-base text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300">
+                        <p className="text-base text-zinc-400 group-hover:text-zinc-300">
                           {personalInfo.email}
                         </p>
                       </div>
-                      <Send className="w-5 h-5 text-zinc-400 transition-all duration-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
+                      <Send className="w-5 h-5 text-zinc-400 transition-all duration-300 group-hover:text-zinc-300 group-hover:translate-x-1 group-hover:-translate-y-1" />
                     </div>
                   </motion.a>
                 </Card>
@@ -92,19 +92,19 @@ const Contact = () => {
                       >
                         <div className="flex items-center gap-4 mb-3">
                           <div
-                            className={`p-3 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 transition-all duration-300 ${link.color}`}
+                            className={`p-3 rounded-xl bg-zinc-800/80 transition-all duration-300 ${link.color}`}
                           >
                             <link.icon className="w-6 h-6" />
                           </div>
-                          <h3 className="text-lg font-semibold text-zinc-900 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white">
+                          <h3 className="text-lg font-semibold text-zinc-200 group-hover:text-white">
                             {link.name}
                           </h3>
                         </div>
-                        <p className="text-base text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300 flex-1">
+                        <p className="text-base text-zinc-400 group-hover:text-zinc-300 flex-1">
                           {link.description}
                         </p>
                         <div className="mt-4 self-end">
-                          <ArrowRight className="w-5 h-5 text-zinc-400 transition-transform duration-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-300 group-hover:translate-x-1" />
+                          <ArrowRight className="w-5 h-5 text-zinc-400 transition-transform duration-300 group-hover:text-zinc-300 group-hover:translate-x-1" />
                         </div>
                       </motion.a>
                     </Card>
@@ -120,19 +120,19 @@ const Contact = () => {
                     download
                     className="relative flex items-center gap-6 p-6"
                   >
-                    <div className="p-3.5 rounded-xl bg-zinc-100 dark:bg-zinc-800/80 group-hover:bg-zinc-200 dark:group-hover:bg-zinc-800 transition-colors">
-                      <Download className="w-7 h-7 text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-900 dark:group-hover:text-zinc-300" />
+                    <div className="p-3.5 rounded-xl bg-zinc-800/80 group-hover:bg-zinc-800 transition-colors">
+                      <Download className="w-7 h-7 text-zinc-400 group-hover:text-zinc-300" />
                     </div>
                     <div className="flex-1 flex items-center justify-between">
                       <div>
-                        <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white">
+                        <h3 className="text-xl font-semibold text-zinc-200 group-hover:text-white">
                           Download Resume
                         </h3>
-                        <p className="text-base text-zinc-600 dark:text-zinc-400 group-hover:text-zinc-700 dark:group-hover:text-zinc-300">
+                        <p className="text-base text-zinc-400 group-hover:text-zinc-300">
                           Get my detailed resume in PDF format
                         </p>
                       </div>
-                      <ArrowRight className="w-5 h-5 text-zinc-400 transition-transform duration-300 group-hover:text-zinc-900 dark:group-hover:text-zinc-300 group-hover:translate-x-1" />
+                      <ArrowRight className="w-5 h-5 text-zinc-400 transition-transform duration-300 group-hover:text-zinc-300 group-hover:translate-x-1" />
                     </div>
                   </motion.a>
                 </Card>
