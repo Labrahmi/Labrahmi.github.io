@@ -91,50 +91,49 @@ export const skills: Skill[] = [
 
 export const projects: Project[] = [
   {
-    title: "Inception-42",
-    description:
-      "containerized infrastructure using Docker, consisting of Nginx, MariaDB, and WordPress. The containers are orchestrated using Docker Compose, and custom images are created for each service.",
-    image: "/projects/inception/project.png",
-    technologies: ["Docker", "System administration"],
-    github: "https://github.com/Labrahmi/Inception-42",
-    live: "#",
-    category: "DevOps",
-  },
-  {
-    title: "ThreeJS Game",
-    description:
-      "A 3D game built using Three.js. The game features a player character that can move around a scene, with lighting and textures applied to the environment.",
-    image: "/projects/threejsGame/project.png",
-    technologies: ["Three.js", "TypeScript", "React"],
-    github: "https://github.com/Labrahmi/Game3d",
+    title: "OCP Procurement",
+    description: "Front-end development for OCP Group's procurement platform using Next.js, TypeScript, and Tailwind CSS with multi-language support. Built real-time chat module and implemented notification system with WebSocket integration for seamless user communication.",
+    image: "/projects/ocp-procurement/project.png",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "WebSocket"],
+    github: "#",
     live: "#",
     category: "Frontend",
   },
   {
-    title: "CanteenApp",
-    description:
-      "Electron.js and Node.js desktop app for school canteen management, providing comprehensive tools for tracking items, transactions, and user data.",
-    image: "/projects/canteenApp/project_2.png",
-    technologies: ["Electron.js", "Tailwind CSS", "Node.js"],
-    github: "https://github.com/Labrahmi/CanteenApp",
+    title: "ANOMALERT",
+    description: "Full-stack anomaly management system with centralized tracking and criticality assessment. Designed microservices architecture using Docker and Nginx, separated front-end and back-end, and implemented AI-powered criticality suggestions.",
+    image: "/projects/anomalert/project.jpeg",
+    technologies: ["Docker", "Nginx", "Microservices", "AI"],
+    github: "#",
+    live: "#",
+    category: "Backend",
+  },
+  {
+    title: "Multiplayer Pong Application",
+    description: "Single-page application for a real-time Pong tournament platform built from scratch. Developed interactive game mechanics and integrated WebSocket for multiplayer functionality and live gameplay.",
+    image: "/projects/pong/project.png",
+    technologies: ["JavaScript", "WebSocket"],
+    github: "#",
     live: "#",
     category: "Frontend",
   },
   {
-    title: "Web Server",
-    description:
-      "HTTP Server built using C/C++. the project aims to teach server socket fundamentals, non blocking, file descriptors monitoring, team collaboration..",
+    title: "HTTP Web Server",
+    description: "HTTP server built in C/C++ to learn server socket fundamentals, non-blocking I/O, file descriptor monitoring, and team collaboration. Implemented non-blocking I/O, learned server socket fundamentals, and practiced file descriptor monitoring and collaboration.",
     image: "/projects/WebServer/project.png",
-    technologies: [
-      "C/C++",
-      "Unix",
-      "Network Programming",
-      "System Administration",
-      "Object-Oriented Programming",
-    ],
+    technologies: ["C", "C++", "Sockets"],
     github: "https://github.com/Labrahmi/WebServer",
     live: "#",
     category: "Backend",
+  },
+  {
+    title: "Inception",
+    description: "Containerized infrastructure project using Docker with Nginx, MariaDB, and WordPress. Orchestrated with Docker Compose and created custom images for each service.",
+    image: "/projects/inception/project.png",
+    technologies: ["Docker", "Nginx", "MariaDB", "WordPress", "Docker Compose"],
+    github: "https://github.com/Labrahmi/Inception-42",
+    live: "#",
+    category: "DevOps",
   },
 ];
 

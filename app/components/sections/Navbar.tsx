@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (value:
           className="fixed inset-0 bg-black dark:bg-zinc-900 z-50 md:hidden flex flex-col min-h-screen"
         >
           {/* Header */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="flex items-center justify-between px-6 py-4 border-b border-zinc-800"
           >
@@ -72,7 +72,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (value:
           </motion.div>
 
           {/* Navigation Links */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="flex-1 px-6 py-8 overflow-y-auto"
           >
@@ -92,7 +92,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (value:
           </motion.div>
 
           {/* Actions */}
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="px-6 py-6 border-t border-zinc-800 space-y-4"
           >
@@ -135,8 +135,8 @@ const Menu = () => {
   return (
     <div className="relative">
       {/* Hamburger Menu Button */}
-      <button 
-        onClick={() => setIsOpen(!isOpen)} 
+      <button
+        onClick={() => setIsOpen(!isOpen)}
         className="md:hidden block"
         aria-label="Toggle Menu"
       >
@@ -184,9 +184,8 @@ const Navbar = () => {
           stiffness: 260,
           damping: 20,
         }}
-        className={`max-w-7xl mx-auto flex items-center border border-transparent justify-between transition-all duration-500 ease-out ${
-          isScrolled ? "py-4 px-6 rounded-full border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-sm" : ""
-        }`}
+        className={`max-w-7xl mx-auto flex items-center border border-transparent justify-between transition-all duration-500 ease-out py-4 px-6 rounded-full ${isScrolled ? " border border-zinc-200 dark:border-zinc-800 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl" : ""
+          }`}
       >
         <Link
           href="#top"
@@ -203,10 +202,9 @@ const Navbar = () => {
           </span>
         </Link>
         <Menu />
-        <motion.button 
-          whileHover={{ scale: 1.05 }}
+        <motion.button
           whileTap={{ scale: 0.95 }}
-          className="px-6 py-2.5 bg-white text-black rounded-full hidden md:block hover:bg-zinc-800 transition-colors"
+          className="px-6 py-2.5 bg-white text-black rounded-full hidden md:block transition-all hover:brightness-90"
         >
           Book a Call
         </motion.button>
